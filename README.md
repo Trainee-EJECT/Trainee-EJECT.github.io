@@ -36,7 +36,7 @@ git push origin <nome-da-branch>
 
 ```
 git pull 
-git merge <Nome da branch>
+git merge <nome-da-branch>
 
 ```
 > obs: Talvez der muitos conflitos, dai recomendo para você sair resolvendo é usar o VS Code.
