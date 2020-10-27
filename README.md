@@ -1,6 +1,6 @@
 # Trainee-EJECT.github.io
 
-### BAIXAR PROJETO
+### BAIXAR O PROJETO
 
 ```
 git clone [--Link--]
@@ -22,7 +22,9 @@ git commit -m "<nome-da-branch: e uma descrição detalhada do que você fez"
 **Ex:** git commit -m "feature/back-end: Alteração/Criação no campo x do models de contato :tada:"
 
 > :tada: **->** Para quando estiver pronto o que você está comitando e não pretende mexer mais;
+
 > :bug: **->** Se foi a resolução de um conflito ou problema;
+
 > :bulb: **->** Está em andamento o que você está fazendo.
 
 ```
