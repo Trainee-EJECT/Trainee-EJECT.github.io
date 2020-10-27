@@ -11,6 +11,22 @@ git checkout -b feature/front-end ou feature/back-end (Criar e trocar de branch)
 
 > obs: Certifique- se de estar trabalhando na sua branch!
 
+### ATUALIZAR O PROJETO
+
+```
+git pull 
+git merge <nome-da-branch>
+
+```
+> obs: Talvez der muitos conflitos, dai recomendo para você sair resolvendo é usar o VS Code.
+
+Após resolver todos os conflitos faça um:
+
+```
+git add * ou <arquivo> 
+
+```
+
 ### SUBIR O PROJETO
 
 ```
@@ -31,19 +47,6 @@ git commit -m "<nome-da-branch: e uma descrição detalhada do que você fez"
 git push origin <nome-da-branch>
 
 ```
+Depois que você enviou, você faz um pull request da sua branch para a master.
 
-### ATUALIZAR O PROJETO
 
-```
-git pull 
-git merge <nome-da-branch>
-
-```
-> obs: Talvez der muitos conflitos, dai recomendo para você sair resolvendo é usar o VS Code.
-
-Após resolver todos os conflitos faça um:
-
-```
-git add * ou <arquivo> 
-
-```
