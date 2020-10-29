@@ -13,8 +13,38 @@
                     <p>
                         <a href="{% url 'blog:index' %}" class="pure-button primary-button">BLOG</a>
                     </p>
+                    <h1>Entre em contato conosco!</h1>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="pure-g-r content-ribbon" id="contato">
+        <div class="pure-u-1">
+            <h3>Tire sua dúvida conosco!</h3>
+            {% if is_valid %}
+            <p>Você enviou o formulário com sucesso</p>
+            {% endif %}
+            <form class="pure-form pure-form-aligned" method="post" action="#contato">
+                {% csrf_token %}
+                <fieldset>
+                    {% for field in form %}
+                    <div class="pure-control-group">
+                        {{ field.label_tag }}
+                        {{ field }}
+                        {% if field.erros %}
+                        <ul class="errorlist">
+                            {% for error in field.errors %}
+                            <li>Este campo é obrigatório</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <div class="pure-controls">
+                        <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
     {% endblock %}
