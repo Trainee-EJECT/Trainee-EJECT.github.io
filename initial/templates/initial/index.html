@@ -1,0 +1,20 @@
+{% extends "initial/base.html" %}
+{% block content %}
+    <div class="splash">
+        <div class="pure-g-r">
+            <div class="pure-u-1">
+                <div class="l-box splash-text">
+                    <h1 class="splash-head">
+                        Universitur - Onde seu SONHO se torna realidade
+                    </h1>
+                    <h2 class="splash-subhead">
+                        Conheça mais um pouco sobre nós acessando nosso blog
+                    </h2>
+                    <p>
+                        <a href="{% url 'blog:index' %}" class="pure-button primary-button">BLOG</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

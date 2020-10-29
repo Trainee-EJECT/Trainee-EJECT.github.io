@@ -1,0 +1,29 @@
+{% extends "initial/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+	<div class="pure-g-r content-ribbon">
+		<div class="pure-u-1">
+			<div class="l-box">
+				<h4 class="content-subhead">Postagens do blog</h4>
+			</div>
+		</div>
+	</div>
+	{% for blog in blogs %}
+	<div class="pure-u-1" style="margin-left: 50px;">
+		<a href="{{blog.get_absolute_url}}">{{ blog.title }}</a>
+		<h5>Por {{ blog.author }}</h5>
+		<h5>Criado em: {{ blog.published_date }}</h5>
+
+		{% if blog.image %}
+		<a href="{{blog.get_absolute_url}}"><img src="{{ blog.image.url }}" alt="{{ blog.title }}"></a>
+		{% else %}
+		<a href="{{blog.get_absolute_url}}"><img src="{% static 'img/img-padrao.jpg' %}" alt="{{ blog.title }}"></a>
+		{% endif %}
+	</div>
+	{% empty %}
+	<p>Nenhuma postagem disponível :(</p>
+	{% endfor %}
+{% endblock %}
