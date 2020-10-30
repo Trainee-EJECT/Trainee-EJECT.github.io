@@ -1,0 +1,37 @@
+{% extends "initial/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h1>Search Page</h1>
+	<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
+	Search <input type="text" name="q" value="{{request.GET.q}}" placeholder="Search posts"/>
+	<input type="submit" name="submit" value="Search"/>
+	</form>
+
+{% if submitbutton == 'Search' and request.GET.q != '' %}
+	{% if results %}
+	<h1>Results for <b>{{ request.GET.q }}</b></h1>
+	<br/><br/>
+
+	{% for result in results %}
+
+	<div class="pure-u-1" style="margin-left: 50px;">
+		<a href="{{result.get_absolute_url}}">{{ result.title }}</a>
+		<h5>Por {{ result.author }}</h5>
+		<h5>Criado em: {{ result.published_date }}</h5>
+		{% if result.image %}
+		<a href="{{result.get_absolute_url}}"><img src="{{ result.image.url }}" alt="{{ result.title }}"></a>
+		{% else %}
+		<a href="{{result.get_absolute_url}}"><img src="{% static 'img/img-padrao.jpg' %}" alt="{{ result.title }}"></a>
+		{% endif %}
+	</div>
+
+	{% endfor %}
+	{% else %}
+	No search results for this query
+	{% endif %}
+	{% endif %}
+
+{% endblock %}
