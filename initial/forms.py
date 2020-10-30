@@ -6,10 +6,11 @@ from initial.mail import send_mail_template
 class ContactMessage(forms.Form):
 	name = forms.CharField(label='Nome', max_length=100)
 	email = forms.EmailField(label='E-mail')
+	about = forms.CharField(label='Assunto do e-mail', max_length=200)
 	message = forms.CharField(label='Mensagem', widget=forms.Textarea)
 
 	def send_mail(self):
-		subject = 'Contato universitur'
+		subject = self.cleaned_data['about']
 		context = {
 			'name': self.cleaned_data['name'],
 			'email': self.cleaned_data['email'],

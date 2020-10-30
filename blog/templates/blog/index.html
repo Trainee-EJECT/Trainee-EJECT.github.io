@@ -16,7 +16,6 @@
 		<a href="{{blog.get_absolute_url}}">{{ blog.title }}</a>
 		<h5>Por {{ blog.author }}</h5>
 		<h5>Criado em: {{ blog.published_date }}</h5>
-
 		{% if blog.image %}
 		<a href="{{blog.get_absolute_url}}"><img src="{{ blog.image.url }}" alt="{{ blog.title }}"></a>
 		{% else %}
@@ -26,4 +25,25 @@
 	{% empty %}
 	<p>Nenhuma postagem disponível :(</p>
 	{% endfor %}
+	{% if blogs.has_other_pages %}
+  <ul class="pagination">
+    {% if blogs.has_previous %}
+      <li><a href="?page={{ blogs.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in blogs.paginator.page_range %}
+      {% if blogs.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if blogs.has_next %}
+      <li><a href="?page={{ blogs.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
 {% endblock %}
