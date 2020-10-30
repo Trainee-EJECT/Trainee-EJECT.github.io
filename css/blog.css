@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  height: 750px;
+  background: url(../images/inicio-blog.svg) no-repeat;
+  background-size: 100%;
+}
+
+.navbar {
+  background: #263b58;
+  background-size: 100%;
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  z-index: 100;
+  padding-top: 2px;
+}
+.dropdown-menu.show {
+  background: #f4a936;
+}
+.dropdown-item {
+  color: #ffffff;
+  font-family: Roboto, Sans-serif;
+}
+
+.logo {
+  float: left;
+  padding-left: 55px;
+  margin-top: -10px;
+}
+
+a.cor-link {
+  text-decoration: none;
+  width: 87px;
+  height: 56px;
+  padding: 20px;
+  font-family: Roboto, Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+a.cor-link:hover {
+  border-bottom-style: dashed;
+  border-bottom-color: #f4a936;
+  padding-bottom: 17px;
+}
+
+.mais {
+  background-color: #f4a936;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.btn-warning:hover {
+  color: #ffffff;
+}
+.btn-warning.dropdown-toggle:focus {
+  color: #ffffff;
+}
+.btn-warning.dropdown-toggle:active {
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.dropdown-item {
+  padding-left: 10px;
+}
+
+
+.home h1 {
+  clear: both;
+  text-align: center;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 80px;
+  line-height: 75px;
+  padding-top: 250px;
+  position: flex;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.links{
+  padding-left: 200px;
+  font-family: Sans-serif;
+  
+}
+
+.busca{
+  float: right;
+  
+  
+  width:300px;
+  position:flex;
+  margin-right: 80px;
+
+}
+
+.busca img{
+ height: 80px;
+ margin-top: -5px;
+ margin-left: -20px;
+ 
+}
+
+.txtBusca{
+  height: 80px;
+  width:200px;
+  border-radius:20px 0 0 20px;
+  border-color:#F4A936;
+  
+}
+
+.butao{
+  border-radius:20px;
+  border: none;
+}
+
+
+.blog {
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  background-color: #FBFBFB;
+  margin-top: 150px;
+  
+}
+
+.blog1 {
+  height: 450px;
+  left: 7px;
+  background: linear-gradient(180deg, #f4a936 0%, #ffc100 100%);
+  border-radius: 15px; 
+  margin-right: 30px; 
+  padding-left: 20px;
+  
+
+}
+
+.blog1 img {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:flex;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+.blog1 h3 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  padding-left: 1px;
+  padding-right: 20px;
+  color: #ffffff;
+  margin-top: -90%;
+  
+}
+
+.blog1 h6{
+  
+  position:flex;
+  align-self: flex-end;
+  font-family: Roboto, Sans-serif;
+  font-style: normal;
+  font-weight:bold;
+  font-size: 24px;
+  text-align:left;
+  color: #ffffff;
+  padding-left:17px;
+  padding-top:17px;
+}
+.paginador{
+  margin-top: 50px ;
+  text-align:center;
+  height: 3px;
+
+}
+.paginador li{
+  display: inline;
+  padding: 10px;
+  font-family: Roboto, Sans-serif;
+  margin-bottom:10px;
+
+}
+
+.paginador li:hover{
+  background:#FFC100;
+  padding-top: 2px;
+  padding-bottom:2px;
+}
+
+
+.footer {
+  position: flex;
+  width:100%;
+  height: 50px;  
+  text-align: center;
+  
+  background: #205B85;
+  border: 1px solid #205B85;
+  box-sizing: border-box;
+  color: #fff;
+  padding-top:15px;
+  font-family: Roboto, Sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  bottom:0;
+}
+
+
+
+
+@media (max-width: 907px) {
+  * {
+    align-items: left;
+    justify-content: center;
+    width: 100%;}
+  .home{
+    background:none;
+    background-color: #263b58;
+  }
+  .paginador img{
+    height: 5px;
+    width:5px;
+  }
+  .paginador{
+    font-size:10px;
+  }
+  .busca{
+    float: right;
+    
+    margin-right: 40px;
+    width:150px;
+    position:flex;
+    margin-right: 0;
+  
+  }
+  
+  .busca img{
+   height: 40px;
+   margin-top: -5px;
+   margin-left: -20px;
+   
+   
+  }
+  
+  .txtBusca{
+    height: 40px;
+    width:150px;
+    border-radius:20px 0 0 20px;
+    border-color:#F4A936;
+    
+    
+  }
+  
+  .butao{
+    border-radius:20px;
+    border: none;
+  }
+}

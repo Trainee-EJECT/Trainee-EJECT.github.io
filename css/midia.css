@@ -1,0 +1,134 @@
+@media (max-width: 907px) {
+    * {
+      /*/ align-items: left;
+      justify-content: center;
+      width: 100%; /*/
+    }
+    .home {
+
+      width: 100%;
+      height: 600px;
+      background: none;
+      background-color: #263b58 ;
+    }
+    .home h1 {
+      font-size: 20px;
+      line-height: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+  
+    .logo img{
+      width:200px;
+      height: auto;
+    }
+
+    
+    .menu {
+      font-size: 10px;
+      margin-top: 0px;
+      
+    }
+    .navbar{
+      height: 200px;
+    }
+  
+    .quem-somos {
+      width: 100%;
+      height: 1200px;
+      
+      margin-top: -500px;
+      align-items: center;
+      background:none;
+    }
+    .quem-somos h2 {
+      font-size: 30px;
+      width: 100%;
+  
+      text-align: center;
+      position: flex;
+      padding-top: 520px;
+      padding-left: 0;
+    }
+    .quem-somos p {
+      position:flex;
+      width: 100%;
+      
+      
+      font-family: Roboto, Sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+  
+      color: #000000;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 600px;
+      align-items:center;
+      padding-left: 0;
+    }
+    .servicos {
+      padding-left:30px;
+      width: 100%;
+      height: 100%;
+      background:none;
+      background-color: #263b58 ;
+    }
+    .carr1{
+      display:none;
+    }
+  
+    .clientes-parceiros{
+      height:500px;
+    }
+  
+    .clientes-parceiros img{
+      height: 200px;
+      width: 200px;
+      
+      
+    }
+    .decora{
+      display: none;
+    }
+    .blog2 h3 {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 42px;
+      text-align: center;
+      padding-left: 1px;
+      padding-right: 1px;
+      color: #ffffff;
+      
+      position: relative;
+    }
+    .blog1 h3 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 1px;
+    color: #ffffff;
+      
+    position: relative;
+    margin-top: 0;
+    }
+    .port {
+      padding-left: 0;
+      padding-top: 50px;
+      
+    
+    }
+    .portfolio{
+      height: 1000px;
+    }
+  
+}
