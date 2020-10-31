@@ -260,9 +260,59 @@ a.dropdown-item{
   padding-top: 100px;
   color: #000000;
 }
+.port1, 
+.port2, 
+.port3, 
+.port4, 
+.port5 {
+  padding:0;
+
+}
+.texto {
+  padding-left:0;
+  padding-right: 0;
+  
+  color:white;
+  opacity:0;
+  transition: opacity .2s linear;
+  background-color:rgba(244,169,54,.6);
+  background-size: 100%;
+  height: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FAFAFA;
+  display:flex; 
+  align-items: center;
+  display: flex;  
+  justify-content: center;
+  text-align: center;  
+  
+}
+
+.port1:hover .texto{
+  opacity:1;
+ }
+ .port2:hover .texto{
+  opacity:1;
+ }
+ .port3:hover .texto{
+  opacity:1;
+ }
+ .port4:hover .texto{
+  opacity:1;
+ }
+ .texto h2{
+   color:#fff;
+   opacity: 0.5;
+   text-align: center;
+   padding:0;
+ }
 
 .decora {
-  margin-top: -595.9px;
+  margin-top: -90%;
 }
 
 .clientes-parceiros{
@@ -272,6 +322,7 @@ a.dropdown-item{
   width:100%;
   padding-top:40px;
 }
+
 
 .clientes-parceiros h2{
   position: flex;
@@ -347,14 +398,14 @@ a.dropdown-item{
 }
 
 .blog-post{
-  padding-top:50px;
+  padding-top:30px;
 }
 
 
 
 .blog1 {
   width:100%;
-  height: 490px;
+  height: 390px;
   
   background: linear-gradient(180deg, #263B58 0%, rgba(40, 109, 204, 0.96) 100%);
   border-radius: 15px; 
@@ -375,21 +426,24 @@ a.dropdown-item{
   width:100%;
   height: 100%;
   padding:13px;
+  border-radius:16px;
   
 }
 .blog1 h3 {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
   padding-left: 1px;
   padding-right: 1px;
   color: #ffffff;
-  
-  position: relative;
-  margin-top: -100%;
+  margin-top: -110%;
+  align-items: center;
+  display: flex;  
+  justify-content: center;
+  text-align: center;  
 }
 
 .blog1 h6{
@@ -399,14 +453,14 @@ a.dropdown-item{
   font-family: Roboto, Sans-serif;
   font-style: normal;
   font-weight:bold;
-  font-size: 24px;
+  font-size: 20px;
   text-align:left;
   color: #ffffff;
-  padding-left:17px;
+  padding-left:20px;
   padding-top:17px;
 }
 .blog2 {
-  height: 490px;
+  height: 390px;
   
   width:100%;
   background: linear-gradient(180deg, #263B58 0%, rgba(40, 109, 204, 0.96) 100%);
@@ -425,7 +479,7 @@ a.dropdown-item{
   width: 100%;
   height: 100%;
   padding:13px;
-  
+  border-radius:16px;
 }
 .blog2 h3 {
   font-family: Roboto, sans-serif;
@@ -437,7 +491,7 @@ a.dropdown-item{
   padding-left: 1px;
   padding-right: 1px;
   color: #ffffff;
-  margin-top: -50%;
+  margin-top: -45%;
   position: relative;
 }
 
@@ -448,10 +502,10 @@ a.dropdown-item{
   font-family: Roboto, Sans-serif;
   font-style: normal;
   font-weight:bold;
-  font-size: 24px;
+  font-size: 20px;
   text-align:left;
   color: #ffffff;
-  padding-left:17px;
+  padding-left:30px;
   padding-top:17px;
 }
 
