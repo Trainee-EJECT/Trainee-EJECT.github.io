@@ -109,28 +109,31 @@ a.dropdown-item{
 .inicio img {
   width: 60px;
 }
-
+.quem-somos{
+  padding-top: 50px;
+}
 
 
 .quem-somos h2 {
-  position: absolute;
-  width: 600px;
+ 
+  
   height: 36px;
   font-family: Roboto, Sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
+  
   text-align: center;
-  padding-top: 200px;
-  padding-left: 100px;
+  padding-top: 0px;
+  
   color: #f4a936;
 }
 
 .quem-somos p {
-  position: absolute;
-  width: 650px;
-  height: 600px;
+  
+ 
+  
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -138,17 +141,31 @@ a.dropdown-item{
   line-height: 28px;
   text-align: center;
   color: #000000;
-  padding-top: 280px;
-  padding-left: 66px;
-  float: left;
+  padding: 50px 30px 0 50px;
+  
+  
+  
+}
+.quem{
+  border-right: 13px solid #F4A936;
+  margin-top:60px;
+  margin-bottom:60px;
+  
+
+  
+}
+
+.carrossel{
+  display: flex;
+  justify-content:center;
 }
 
 .carr1 {
   position: relative;
-  margin-left: 850px;
+  margin:0 50px 0 50px;
   width: 338px;
   height: 443px;
-  top: 187px;
+  top:59px;
   background: #f4a936;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -163,35 +180,41 @@ a.dropdown-item{
 }
 
 .carr1 h3 {
-  width: 183px;
+  
   height: 56px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 42px;
+ 
   text-align: center;
   color: #f7d8a4;
-  padding-left: 90px;
+ 
   padding-top: 40px;
 }
 
 .carr1 h4 {
-  width: 300px;
-
+  
   font-family: Roboto, Sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   text-align: center;
   padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: flex;
-  padding-left: 30px;
+
+  
 
   color: #ffffff;
 }
-
+.setas-decora{
+  float: right;
+  margin-top: -90px;
+}
 
 
 .servicos h2 {
@@ -313,6 +336,10 @@ a.dropdown-item{
 
 .decora {
   margin-top: -90%;
+}
+.decora-port{
+  float: right;
+  margin-top:-250px;
 }
 
 .clientes-parceiros{
@@ -526,4 +553,117 @@ a.dropdown-item{
   font-size: 34px;
   line-height: 40px;
   bottom:0;
+}
+.coluna-contatos{
+  height: 100%;
+  width: 100%;
+}
+
+.contatos{
+  background-color: #263B58;
+  
+}
+
+
+.card-contato{
+  background: #F4A936;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: auto;
+  height: 344px;
+  margin: 41px 0 0 50px;
+  text-align: center;
+  padding-top:60px;
+  margin-left: 120px;
+  margin-right: 120px;
+  
+  
+}
+
+.card-contato h4{
+  font-family: Roboto, Sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+
+
+.form{
+  width: 550px;
+  height: 375px;
+  margin-top: -50px;
+  top: 323px;
+  padding-left: 35px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  
+  
+  
+}
+.form p{
+  color:#fff;
+  font-family: Roboto, Sans-serif;
+  
+}
+
+.nome-form{
+  padding-top:50px;
+}
+.campo-nome{
+  
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 475px;
+  height: 40px;
+  background-color: #263b58;
+  margin-bottom: 10px;
+}
+.campo-email{
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 475px;
+  height: 40px;
+  background-color: #263b58;
+  margin-bottom: 5px;
+}
+
+.campo-mensagem{
+  width: 300px;
+  height: 100px;
+  
+  background-color: #263b58;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+}
+.enviar{
+  background-color: #F4A936;
+  padding:10px;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-top:25px;
+  margin-left: 50px;
+  position: absolute;
+  font-family: Roboto, Sans-serif;
+}
+
+
+
+.mapa{
+  height: 100%;
+  width: 100%;
+}
+.maps{
+  padding:0;
 }

@@ -30,25 +30,28 @@
     <style>
       
       .home {
-        height: 1360px;
+        
         background: url(images/background.svg) no-repeat;
         background-size: 100%;
+        height: 1366px;
         }
       .quem-somos {
-        background: url(images/background2.svg);
-        height: 755px;
+        background:#FBFBFB;
+        height: 600px;
         width: 100%;
-        margin-top: -480px;
+        margin-top: -490px;
         }
         .servicos {
-        background: url(images/background3.svg);
+        background: url(images/background3.svg)no-repeat;
+        background-size:100%;
         height: 755px;
         width: 100%;
         justify-content: center;
         }
 
         .portfolio {
-        background: url(images/background4.svg);
+        background: #FBFBFB;
+        
         height: 755px;
         width: 100%;
 
@@ -86,7 +89,7 @@
     <div class="home" id="home">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div>
-        <a class="logo" href="#"><img src="images/logo.svg"></a>
+        <a class="logo" href="#home"><img src="images/logo.svg"></a>
       </div>
       <div> 
       <button class="navbar-toggler botao-mobile" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -125,13 +128,15 @@
           do seu <strong>SONHO</strong><br />
           começa!
         </h1>
-        <a class="grow" href="#"><img src="images/vector1.svg" /></a>
+        <a class="grow" href="#contatos"><img src="images/vector1.svg" /></a>
       </div>
     </div>
 
     <div class="quem-somos" id="sobre">
-      <div>
-        <h2>QUEM SOMOS</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="quem col-sm-12 col-md-7 col-lg-7">
+          <h2>QUEM SOMOS</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           accumsan augue at rhoncus fringilla. jjjjjjjjjjjjjj viverra tempus
@@ -144,14 +149,14 @@
           bibendum. Mauris dictum hendrerit lectus in vehicula. Suspendisse et
           dolor enim.
         </p>
-      </div>
-      <div class="carr1">
+        </div>
+        <div class="carrossel col-sm-12 col-md-5 col-lg-5">
+        <div class="carr1 ">
         <div>
           <img src="images/flecha1.svg" />
           <h3>MISSÃO</h3>
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            accumsan augue at rhoncus fringilla.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan augue at rhoncus fringilla.  jhygy viverra tempus nisl sit.
           </h4>
         </div>
 
@@ -159,25 +164,30 @@
           <img src="images/flecha1.svg" />
           <h3>VALORES</h3>
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            accumsan augue at rhoncus fringilla.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan augue at rhoncus fringilla.  jhygy viverra tempus nisl sit.
           </h4>
         </div>
         <div>
           <img src="images/flecha1.svg" />
           <h3>MISSÃO</h3>
           <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            accumsan augue at rhoncus fringilla.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan augue at rhoncus fringilla.  jhygy viverra tempus nisl sit.
           </h4>
         </div>
       </div>
+      </div>
+      </div>
+      </div>
+      <img class="setas-decora" src="images/setas-decora.svg">
     </div>
+    
 
     <div class="servicos" id="servicos">
       <div class="container">
         <h2>SERVIÇOS</h2>
+        
         <div class="row">
+          
           <div class="col-sm">
             <img src="images/serv.svg" />
             <h3>serviço 1</h3>
@@ -204,6 +214,7 @@
           </div>
         </div>
       </div>
+      
     </div>
 
     <div class="portfolio" id="portfolio">
@@ -226,6 +237,7 @@
         </div>
       </div>
       <img class="decora" src="images/decora.svg" />
+      <img class="decora-port" src="images/decora-port.svg">
     </div>
 
     <div class="clientes-parceiros" id="clientes-parceiros">
@@ -286,6 +298,45 @@
 
 
     </div>
+
+    <div class="contatos" id="contatos">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="coluna-contatos col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card-contato">
+            <h4>CONTATO</h4>
+            
+            
+            </div>
+            <form class="form">
+              
+    
+              <p class=" nome-form">NOME</p>
+              <input  class="campo-nome" type=" text" name="nome">
+    
+              <p class=" email-form">EMAIL</p>
+              <input  class="campo-email"type="email">
+    
+    
+              <p class=" mensagem-form">MENSAGEM</p>
+              <textarea class="campo-mensagem"></textarea>
+    
+              <input  class="enviar" type="submit" value="ENVIAR">
+    
+            </form>
+          </div>
+
+          <div class=" maps col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7938.268227910688!2d-35.211228275820986!3d-5.836712533083451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sufrn!5e0!3m2!1spt-BR!2sbr!4v1604202173267!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
     <div class="footer"><h6>Universitur @ EJECT2020</h6></div>
 
     <script
