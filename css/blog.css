@@ -3,11 +3,7 @@
   margin: 0;
 }
 
-.home {
-  height: 750px;
-  background: url(../images/inicio-blog.svg) no-repeat;
-  background-size: 100%;
-}
+
 
 .navbar {
   background: #263b58;
@@ -95,7 +91,7 @@ a.dropdown-item{
 }
 
 .links{
-  padding-left: 140px;
+  padding-left: 120px;
   
   font-family: Sans-serif;
   
@@ -105,9 +101,10 @@ a.dropdown-item{
   float: right;
   
   
-  width:300px;
+  width:450px;
   position:flex;
-  margin-right: 80px;
+  margin-right: 37px;
+  margin-top: -60px;
 
 }
 
@@ -120,7 +117,7 @@ a.dropdown-item{
 
 .txtBusca{
   height: 80px;
-  width:200px;
+  width:320px;
   border-radius:20px 0 0 20px;
   border-color:#F4A936;
   
@@ -139,6 +136,9 @@ a.dropdown-item{
   background-color: #FBFBFB;
   margin-top: 150px;
   
+}
+.blog a{
+  text-decoration:none;
 }
 
 .blog1 {
@@ -168,13 +168,13 @@ a.dropdown-item{
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 42px;
   text-align: center;
   padding-left: 1px;
   padding-right: 20px;
   color: #ffffff;
-  margin-top: -90%;
+  margin-top: -95%;
   
 }
 
@@ -254,10 +254,11 @@ a.dropdown-item{
   .busca{
     float: right;
     
-    margin-right: 40px;
-    width:150px;
+    margin-right: 0;
+    width:250px;
     position:flex;
     margin-right: 0;
+    margin-top: 0;
   
   }
   
@@ -271,7 +272,7 @@ a.dropdown-item{
   
   .txtBusca{
     height: 40px;
-    width:150px;
+    width:200px;
     border-radius:20px 0 0 20px;
     border-color:#F4A936;
     
@@ -306,4 +307,5 @@ a.dropdown-item{
   .navbar{
     height: 50px;
   }
+  
 }

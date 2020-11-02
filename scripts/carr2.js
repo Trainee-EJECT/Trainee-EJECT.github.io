@@ -5,6 +5,7 @@ $('.carr2').slick({
     autoplaySpeed: 500,
     slidesToShow: 5,
     arrows: false,
+    pauseOnHover:false,
     responsive: [
       {
         breakpoint: 768,
@@ -12,6 +13,7 @@ $('.carr2').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
+          pauseOnHover:false,
           slidesToShow: 3
         }
       },
@@ -21,6 +23,7 @@ $('.carr2').slick({
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
+          pauseOnHover:false,
           slidesToShow: 1
         }
       }
