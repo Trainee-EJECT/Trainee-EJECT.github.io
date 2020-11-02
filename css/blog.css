@@ -307,5 +307,8 @@ a.dropdown-item{
   .navbar{
     height: 50px;
   }
+  .row{
+    margin: 0;
+  }
   
 }
