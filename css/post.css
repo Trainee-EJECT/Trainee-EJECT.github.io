@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  .navbar {
+    background: #263b58;
+    background-size: 100%;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .dropdown-menu.show{
+    background-color: #f4a936;
+    
+  }
+  .dropdown-item{
+    color:#FAFAFA;
+    font-family: Roboto, Sans-serif;
+    
+  }
+  .nav-mobile{
+    background-color: #263b58;
+  }
+  
+  .logo {
+    float: left;
+    padding-left: 55px;
+    margin-top: -10px;
+  }
+  
+  a.cor-link{
+    text-decoration: none;
+    width: 87px;
+    height: 56px;
+    padding: 20px;
+    font-family: Roboto, Sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 42px;
+    color: #FAFAFA;
+  }
+  
+  a.cor-link:hover{
+    border-bottom-style: dashed;
+    border-bottom-color: #f4a936;
+    padding-bottom: 17px;
+  }
+  
+  .mais{
+    background-color: #f4a936;
+    border-radius: 20px;
+    margin-right: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .btn-warning:hover{
+    color: #FAFAFA;
+  }
+  .btn-warning.dropdown-toggle:focus{
+    color: #FAFAFA;
+  }
+  .btn-warning.dropdown-toggle:active{
+    color: #FAFAFA;
+  }
+  
+  .navbar{
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  a.dropdown-item{
+    padding-left: 10px;
+  }
+
+  .blog-home{
+    background-color: #263b58;
+    height: 380px;
+    background-size: 100%;
+  }
+
+  .blog-home h1{
+    font-family: Roboto, Sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #FAFAFA;
+    padding-top: 180px;
+   
+  }
+
+  .links{
+    
+    font-family: Sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    color:#FAFAFA;
+    text-decoration: none;
+    
+  }
+
+  .links a{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FAFAFA;
+  }
+.conteudo{
+    width: 100%;
+    height: 100%;
+}
+.conteudo img{
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+    padding-top: 52px;
+    
+    
+}
+.conteudo h2{
+    font-family: Roboto, Sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color:#242424;
+    padding-top: 18px;
+
+}
+
+.h3{
+    text-align: center;
+    word-spacing: 900px;
+    font-family: Roboto, Sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 50px;
+    color: #242424;
+    padding-bottom: 50px;
+    
+    
+
+}
+.conteudo p{
+    text-align:left;
+    padding-left: 12%;
+    padding-right: 9%;
+    
+    
+}
+
+
+
+
+
+
+.footer {
+    position: flex;
+    width:100%;
+    height: 50px;  
+    text-align: center;
+    
+    background: #205B85;
+    border: 1px solid #205B85;
+    box-sizing: border-box;
+    color: #fff;
+    padding-top:15px;
+    font-family: Roboto, Sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    bottom:0;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 907px) {
+    .logo img{
+      width:200px;
+      height: auto;
+    }
+  
+    
+    .menu {
+      font-size: 10px;
+      margin-top: 0px;
+      
+    }
+    .navbar{
+      height: 50px;
+    }
+    .conteudo{
+      padding:0;
+    }
+    .conteudo p{
+      text-align:center;
+      padding-left: 6%;
+      padding-right: 6%;
+      padding-top: 50px;
+  }
+    .conteudo img{
+      width: 80%;
+      
+    }
+    .h3{
+      text-align: center;
+      
+      font-family: Roboto, Sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      padding-top: 50px;
+      color: #000000;
+      padding-bottom: 50px;
+      
+      
+  
+  }
+    .row{
+    margin: 0;
+    }
+
+
+  }
