@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -108,7 +109,7 @@ a.dropdown-item {
   width: 60px;
 }
 .quem-somos {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .quem-somos h2 {
@@ -622,7 +623,6 @@ a.dropdown-item {
 .campo-mensagem {
   width: 350px;
   height: 100px;
-
   background-color: #263b58;
   border: 1px solid#FAFAFA;
   box-sizing: border-box;

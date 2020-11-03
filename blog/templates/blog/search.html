@@ -1,37 +1,143 @@
-{% extends "initial/base.html" %}
-
+<!DOCTYPE html>
 {% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-{% block content %}
+    <style>
+      .home {
+        height: 750px;
+        background: url({% static 'img/background-blog.svg' %}) no-repeat;
+        background-size: 100%;
+      }
+    </style>
 
-<h1>Search Page</h1>
-	<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
+    <title>Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="home" id="home">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div>
+          <a class="logo" href="{% url 'initial:index' %}"><img src="{% static 'img/logo.svg' %}" /></a>
+        </div>
+        <div>
+          <button
+            class="navbar-toggler botao-mobile"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="nav-mobile collapse navbar-collapse"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav menu">
+              <li class="nav-item active">
+                <a class="cor-link" href="{% url 'initial:index' %}"
+                  >Início <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="cor-link" href="{% url 'initial:index' %}">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="cor-link" href="{% url 'initial:index' %}">Serviços</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="mais cor-link btn-warning dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Mais
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="{% url 'initial:index' %}"
+                    >Portfólio</a
+                  >
+                  <a class="dropdown-item" href="{% url 'initial:index' %}"
+                    >Clientes e Parceiros</a
+                  >
+                  <a class="dropdown-item" href="{% url 'initial:index' %}">Blog</a>
+                  <a class="dropdown-item" href="{% url 'initial:index' %}"
+                    >Contato</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="inicio">
+        <h1>
+          <strong>BUSCAS</strong>
+        </h1>
+      </div>
+    </div>
+    <div>
+      <div class="links">
+        <a href="{% url 'initial:index' %}">Início</a>>><a href="{% url 'blog:index' %}">Ver Blog</a>>><a href="">Busca por: "{{request.GET.q}}"</a>
+      </div>
+      <!--<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
 	Search <input type="text" name="q" value="{{request.GET.q}}" placeholder="Search posts"/>
 	<input type="submit" name="submit" value="Search"/>
-	</form>
+	</form>-->
+      <div class="busca">
+      	<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
+	        <input type="text" type="search" class="txtBusca" name="q" value="{{request.GET.q}}" placeholder="Buscar postagens"/>
+	        <button class="butao" type="submit" name="submit">
+	          <img src="{% static 'img/busca.svg'%}" id="btnBusca" alt="Buscar" />
+	        </button>
+    	  </form>
+      </div>
+    </div>
 
-{% if submitbutton == 'Search' and request.GET.q != '' %}
 	{% if results %}
-	<h1>Results for <b>{{ request.GET.q }}</b></h1>
-	<br/><br/>
+	<br><br><br><br>
+	<h1 style="text-align: center; margin-bottom: -50px;">Resultados para <b>{{ request.GET.q }}</b></h1>
 
-	{% for result in results %}
+	<div class="blog container">
+      <div class="row">
+      	{% for result in results %}
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="blog1" style="margin-bottom: 30px;">
+            {% if result.image %}
+			      <a href="{{result.get_absolute_url}}"><img src="{{ result.image.url }}" alt="{{ result.title }}"></a>
+			      {% else %}
+			      <a href="{{result.get_absolute_url}}"><img src="{% static 'img/img-padrao-oficial.PNG' %}" alt="{{ result.title }}"></a>
+			      {% endif %}
+            <a href="{{result.get_absolute_url}}"><h3>{{ result.title }}</h3></a>
+            <h6>Por: {{ result.author }}</h6>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+      </div>
 
-	<div class="pure-u-1" style="margin-left: 50px;">
-		<a href="{{result.get_absolute_url}}">{{ result.title }}</a>
-		<h5>Por {{ result.author }}</h5>
-		<h5>Criado em: {{ result.published_date }}</h5>
-		{% if result.image %}
-		<a href="{{result.get_absolute_url}}"><img src="{{ result.image.url }}" alt="{{ result.title }}"></a>
-		{% else %}
-		<a href="{{result.get_absolute_url}}"><img src="{% static 'img/img-padrao.jpg' %}" alt="{{ result.title }}"></a>
-		{% endif %}
-	</div>
-
-	{% endfor %}
 	{% else %}
-	No search results for this query
+	Não há resultados para essa busca
 	{% endif %}
-	{% endif %}
-
-{% endblock %}

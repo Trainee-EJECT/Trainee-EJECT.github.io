@@ -40,7 +40,6 @@ def search(request):
             context={'results': results,
                      'submitbutton': submitbutton}
             return render(request, 'blog/search.html', context)
-
         else:
             return render(request, 'blog/search.html')
 
