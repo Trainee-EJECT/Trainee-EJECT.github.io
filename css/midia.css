@@ -107,7 +107,7 @@
       text-align: center;
       padding-left: 1px;
       padding-right: 1px;
-      color: #ffffff;
+      color: #FAFAFA;
       margin-top: -60%;
       position: relative;
     }
@@ -120,7 +120,7 @@
     text-align: center;
     padding-left: 1px;
     padding-right: 1px;
-    color: #ffffff;
+    color:#FAFAFA;
       
     position: relative;
     margin-top: 0;
@@ -142,7 +142,7 @@
       padding-left:0;
       padding-right: 0;
       
-      color:white;
+      color:#FAFAFA;
       opacity:0;
       transition: opacity .2s linear;
       background-color:rgba(244,169,54,.4);
@@ -158,25 +158,31 @@
       color: #FAFAFA;
     
     }
+    .card-contato{
+      text-align: center;
+    }
     .campo-nome{
   
-      border: 1px solid #FFFFFF;
+      border: 1px solid#FAFAFA;
       box-sizing: border-box;
       border-radius: 20px;
       width: auto;
       height: 40px;
       background-color: #263b58;
+      margin-top :60px;
+      margin-left: -37px;
     }
     .campo-email{
-      border: 1px solid #FFFFFF;
+      border: 1px solid #FAFAFA;
       box-sizing: border-box;
       border-radius: 20px;
       width: auto;
       height: 40px;
       background-color: #263b58;
+      
     }
     .campo-assunto{
-      border: 1px solid #FFFFFF;
+      border: 1px solid #FAFAFA;
       box-sizing: border-box;
       border-radius: 20px;
       width: auto;
@@ -189,7 +195,7 @@
       height: 80px;
       
       background-color: #263b58;
-      border: 1px solid #FFFFFF;
+      border: 1px solid #FAFAFA;
       box-sizing: border-box;
       border-radius: 20px;
     }
@@ -199,7 +205,7 @@
       margin-top: -50px;
       top: 323px;
       
-      border: 1px solid #FFFFFF;
+      border: 1px solid #FAFAFA;
       box-sizing: border-box;
       border-radius: 20px;
       margin-left: 0;
@@ -211,7 +217,7 @@
     }
     .card-contato{
       background: #F4A936;
-      border: 1px solid #FFFFFF;
+      border: 1px solid #FAFAFA;
       box-sizing: border-box;
       border-radius: 20px;
       width: 200px;
@@ -226,12 +232,13 @@
     .enviar{
     background-color: #F4A936;
     padding:10px;
-    color: #ffffff;
+    color: #FAFAFA;
     border-radius: 20px;
     margin-top:25px;
     margin-left: 10px;
     
     font-size: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
     }
     .setas-decora{
@@ -254,7 +261,7 @@
       text-align: center;
       padding-top: 0;
     
-      color: #ffffff;
+      color: #FAFAFA;
     }
     .instagram{
       padding-left: 10px;
@@ -271,7 +278,7 @@
       font-size: 10px;
       line-height: 35px;
     
-      color: #FFFFFF;
+      color: #FAFAFA;
     }
     .facebook{
       padding-left: 10px;
