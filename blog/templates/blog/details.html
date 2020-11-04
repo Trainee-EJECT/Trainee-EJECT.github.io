@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/post.css' %}">
+    <title>Página do Post</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="home" id="home">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div>
+        <a class="logo" href="{% url 'initial:index' %}"><img src="{% static 'img/logo.svg' %}"></a>
+      </div>
+      <div> 
+      <button class="navbar-toggler botao-mobile" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" nav-mobile collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav menu">
+            <li class="nav-item active">
+              <a class="cor-link" href="{% url 'initial:index' %}">Início <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="cor-link" href="{% url 'initial:index' %}">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="cor-link" href="{% url 'initial:index' %}">Serviços</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class=" mais cor-link btn-warning dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mais
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'initial:index' %}">Portfólio</a>
+                <a class="dropdown-item" href="{% url 'initial:index' %}">Clientes e Parceiros</a>
+                <a class="dropdown-item" href="{% url 'initial:index' %}">Blog</a>
+                <a class="dropdown-item" href="{% url 'initial:index' %}">Contato</a>
+              </div>
+            </li>
+          </ul>
+        </div> 
+        </div>
+      </nav>
+      <div class="blog-home">
+        <h1>BLOG</h1>
+        <div class="links">
+          <a href="{% url 'initial:index' %}">Início</a>>><a href="{% url 'blog:index' %}">Ver Blog</a>>><a href="{{blog.get_absolute_url}}">Título do Post</a>
+        </div>
+      </div>
+      <div class="cointainer">
+        <div class="row">
+          <div class="conteudo col-12 col-sm-12 col-md-12">
+        	{% if blog.image %}
+  			<img src="{{ blog.image.url }}" alt="{{ blog.title }}">
+  			{% else %}
+  			<img src="{% static 'img/img-padrao-oficial.PNG' %}" alt="{{ blog.title }}">
+  			{% endif %}
+        <h2>{{blog.title}}</h2>
+        <div class="container-post">
+          <h3 class="h3-1">{{blog.published_date}}</h3>
+          <h3 class="h3-2">Por: {{blog.author}}</h3>
+          <div style="clear: both;"></div>
+          <p> {{blog.text|linebreaks}}</p>
+        </div>
+        <div>
+         </div>
+        </div>
+      </div>
+      
+      
+      <div class="footer"><h6>Universitur @ EJECT2020</h6></div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>     
+</body>
+
+
+</html>
