@@ -51,7 +51,7 @@
       <div class="blog-home">
         <h1>BLOG</h1>
         <div class="links">
-          <a href="{% url 'initial:index' %}">Início</a>>><a href="{% url 'blog:index' %}">Ver Blog</a>>><a href="{{blog.get_absolute_url}}">Título do Post</a>
+          <a href="{% url 'initial:index' %}">Início</a>>><a href="{% url 'blog:index' %}">Ver Blog</a>>><a href="{{blog.get_absolute_url}}">{{ blog.title }}</a>
         </div>
       </div>
       <div class="cointainer">
