@@ -29,18 +29,20 @@
       rel="stylesheet"
     />
     <style>
-      
+      body{
+        background-color: #FBFBFB;
+      }
       .home {
         
-        background: url({% static 'img/background.svg' %}) no-repeat;
+        background: url({% static 'img/background.svg' %}) no-repeat; 
         background-size: 100%;
-        height: 1366px;
+        height: 210vh;
         }
       .quem-somos {
         background:#FBFBFB;
         height: 600px;
         width: 100%;
-        margin-top: -490px;
+        margin-top: -40%;
         }
         .servicos {
         background: url({% static 'img/background3.svg' %})no-repeat;
@@ -80,6 +82,26 @@
         background: url({% static 'img/fortaleza-dos-reis-magos.jpg' %})no-repeat;
         background-size: 100%;
         height: 200px;
+      }
+      @media (max-width: 1500px){
+        .quem-somos {
+          margin-top: -50%;
+        }
+      }
+      @media (max-width: 1350px){
+        .quem-somos {
+          margin-top: -70%;
+        }
+      }
+      @media (max-width: 1150px){
+        .quem-somos {
+          margin-top: -87%;
+        }
+      }
+      @media (max-width: 950px){
+        .quem-somos {
+          margin-top: -110%;
+        }
       }
      </style>
      <link rel="stylesheet" href="{% static 'css/midia.css' %}" />
@@ -262,11 +284,9 @@
 
       <div class="blog" id="blog">
         <h2>Blog</h2>
-        
-        <div class="blog-post container">
+        <!--<div class="blog-post container">
           <div class="row">
             <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
-              
               <div class="blog1"><img src="{% static 'img/blog1-azul.png' %}" />
                 <h3>O QUE NÃO<br> PODE ESQUECER<br> AO VIAJAR</h3>
                 <h6>
@@ -292,13 +312,44 @@
                   Por Yuri Azevedo
                 </h6>
               </div>
+            </div>-->
+        <div class="blog-post container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <div class="blog1">
+              {% if blog1.image %}
+              <img src="{{ blog1.image.url }}" alt="{{ blog1.title }}">
+              {% else %}
+              <img src="{% static 'img/img-padrao-blog.PNG' %}" alt="{{ blog1.title }}">
+              {% endif %}
+              <h3>{{ blog1.title }}</h3>
+              <h6>Por: {{ blog1.author }}</h6>
             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="blog2">
+              {% if blog2.image %}
+              <img src="{{ blog2.image.url }}" alt="{{ blog2.title }}">
+              {% else %}
+              <img src="{% static 'img/img-padrao-blog.PNG' %}" alt="{{ blog2.title }}">
+              {% endif %}
+              <h3>{{ blog2.title }}</h3>
+              <h6>Por: {{ blog2.author }}</h6>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <div class="blog1">
+              {% if blog3.image %}
+              <img src="{{ blog3.image.url }}" alt="{{ blog3.title }}">
+              {% else %}
+              <img src="{% static 'img/img-padrao-blog.PNG' %}" alt="{{ blog3.title }}">
+              {% endif %}
+              <h3>{{ blog3.title }}</h3>
+              <h6>Por: {{ blog3.author }}</h6>
+            </div>
+          </div>
             <a class="grow" href="{% url 'blog:index' %}">Ver o Blog</a>
       </div>
-      
-
-
-
     </div>
 
     <div class="contatos" id="contatos">

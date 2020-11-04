@@ -83,7 +83,7 @@ a.dropdown-item {
   font-family: Roboto, sans-serif;
   font-size: 60px;
   line-height: 75px;
-  padding-top: 200px;
+  padding-top: 15%;
   position: flex;
   font-style: normal;
   font-weight: normal;
@@ -403,7 +403,6 @@ a.dropdown-item {
 .blog1 {
   width: 100%;
   height: 390px;
-
   background: linear-gradient(
     180deg,
     #263b58 0%,
@@ -416,7 +415,6 @@ a.dropdown-item {
 .blog1 img {
   margin-left: 0;
   margin-right: 0;
-
   display: block;
   margin-left: auto;
   margin-right: auto;

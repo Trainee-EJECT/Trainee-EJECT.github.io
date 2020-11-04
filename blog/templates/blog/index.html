@@ -12,8 +12,11 @@
     />
 
     <style>
+      body{
+        background-color: #FBFBFB;
+      }
       .home {
-        height: 750px;
+        height: 110vh;
         background: url({% static 'img/background-blog.svg' %}) no-repeat;
         background-size: 100%;
       }
@@ -100,7 +103,7 @@
     </div>
     <div>
       <div class="links">
-        <a href="{% url 'initial:index' %}">Início</a>>><a href="{% url 'blog:index' %}">Ver Blog</a>
+        <a href="{% url 'initial:index' %}" style="text-decoration: none; color: #263B58; font-size: 22px;">Início </a> >> <a href="{% url 'blog:index' %}" style="text-decoration: none; color: #263B58; font-size: 22px;"> Ver Blog</a>
       </div>
       <!--<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
 	Search <input type="text" name="q" value="{{request.GET.q}}" placeholder="Search posts"/>
@@ -108,7 +111,7 @@
 	</form>-->
       <div class="busca">
       	<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
-	        <input type="text" type="search" class="txtBusca" name="q" value="{{request.GET.q}}" placeholder="Buscar postagens"/>
+	        <input type="text" type="search" class="txtBusca" name="q" value="{{request.GET.q}}" placeholder="Buscar postagens" style="padding-left: 7px;" />
 	        <button class="butao" type="submit" name="submit">
 	          <img src="{% static 'img/busca.svg'%}" id="btnBusca" alt="Buscar" />
 	        </button>
@@ -124,7 +127,7 @@
             {% if blog.image %}
 			      <a href="{{blog.get_absolute_url}}"><img src="{{ blog.image.url }}" alt="{{ blog.title }}"></a>
 			      {% else %}
-			      <a href="{{blog.get_absolute_url}}"><img src="{% static 'img/img-padrao-oficial.PNG' %}" alt="{{ blog.title }}"></a>
+			      <a href="{{blog.get_absolute_url}}"><img src="{% static 'img/img-padrao-blog.PNG' %}" alt="{{ blog.title }}"></a>
 			      {% endif %}
             <a href="{{blog.get_absolute_url}}"><h3>{{ blog.title }}</h3></a>
             <h6>Por: {{ blog.author }}</h6>

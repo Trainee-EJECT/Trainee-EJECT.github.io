@@ -100,7 +100,7 @@
     </div>
     <div>
       <div class="links">
-        <a href="{% url 'initial:index' %}">Início</a>>><a href="{% url 'blog:index' %}">Ver Blog</a>>><a href="">Busca por: "{{request.GET.q}}"</a>
+        <a href="{% url 'initial:index' %}" style="text-decoration: none; color: #263B58; font-size: 22px;">Início </a> >> <a href="{% url 'blog:index' %}" style="text-decoration: none; color: #263B58; font-size: 22px;"> Ver Blog </a> >> <a href="" style="text-decoration: none; color: #263B58; font-size: 22px;"> Busca por: "{{request.GET.q}}"</a>
       </div>
       <!--<form action="{% url 'blog:search' %}" method="GET" value="{{request.GET.q}}">
 	Search <input type="text" name="q" value="{{request.GET.q}}" placeholder="Search posts"/>
@@ -128,7 +128,7 @@
             {% if result.image %}
 			      <a href="{{result.get_absolute_url}}"><img src="{{ result.image.url }}" alt="{{ result.title }}"></a>
 			      {% else %}
-			      <a href="{{result.get_absolute_url}}"><img src="{% static 'img/img-padrao-oficial.PNG' %}" alt="{{ result.title }}"></a>
+			      <a href="{{result.get_absolute_url}}"><img src="{% static 'img/img-padrao-blog.PNG' %}" alt="{{ result.title }}"></a>
 			      {% endif %}
             <a href="{{result.get_absolute_url}}"><h3>{{ result.title }}</h3></a>
             <h6>Por: {{ result.author }}</h6>
