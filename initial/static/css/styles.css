@@ -439,6 +439,7 @@ a.dropdown-item {
   display: flex;
   justify-content: center;
   text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .blog1 h6 {
@@ -452,6 +453,7 @@ a.dropdown-item {
   color: #FAFAFA;
   padding-left: 20px;
   padding-top: 17px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .blog2 {
   height: 390px;
@@ -490,6 +492,7 @@ a.dropdown-item {
   color:#FAFAFA;
   margin-top: -40%;
   position: relative;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .blog2 h6 {
@@ -503,6 +506,7 @@ a.dropdown-item {
   color: #FAFAFA;
   padding-left: 30px;
   padding-top: 17px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
